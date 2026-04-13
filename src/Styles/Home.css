@@ -1,0 +1,64 @@
+.General {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.tarjet {
+    display: flex;
+    flex-direction: column;
+    width: 250px; /* Mismo ancho para todas */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    /* IMPORTANTE: No fixes la altura, deja que crezca */
+}
+
+.tarjet img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px; /* Misma altura para imágenes */
+}
+
+.tarjet-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex: 1;
+    /* Sin altura fija */
+}
+
+.tarjet h3 {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+    /* Permite que el texto fluya naturalmente */
+    word-wrap: break-word; /* Rompe palabras largas si es necesario */
+}
+
+.pb {
+    margin-top: auto; /* Esto empuja el botón al fondo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.pb p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pb button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
