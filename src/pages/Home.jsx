@@ -1,11 +1,14 @@
 import { productos } from "../services/productos";
 import TarjetaProducto from "../components/TarjetaProducto";
-import "../Styles/Home.css"
+import BarraNavegacion from '../components/BarraNavegacion';
+
+import "../styles/Home.css";
+
 
 const Home =() => {
  return (
     <div>
-        <h1>Drop City</h1>
+        <BarraNavegacion />
         <div className="General">
           {productos.map((producto)=>(
             <TarjetaProducto key={producto.id} producto={producto}/>

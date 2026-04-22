@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;           /* Da espacio entre palabras */
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-signup{
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}

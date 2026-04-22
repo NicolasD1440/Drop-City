@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     gap: 20px;
     align-items: stretch;
+    padding-top: 15px;
 }
 
 .tarjet {
