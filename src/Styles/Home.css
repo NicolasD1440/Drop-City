@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.container{
+    max-width: 1200px; /* O el ancho que prefieras */
+    margin: 0 auto;    /* Esto es lo que centra todo en pantalla */
+    padding: 0 20px;   /* Un pequeño respiro lateral en móviles */
+}
+
 .General {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     align-items: stretch;
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 .tarjet {
@@ -16,6 +24,16 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border: 1px solid #ddd;
     /* IMPORTANTE: No fixes la altura, deja que crezca */
+
+    /* Esto hace que el cambio sea suave (duración de 0.3 segundos) */
+   transition: transform 0.3s ease;
+   font-family: 'Poppins', sans-serif;
+   color: #484848;
+}
+
+.tarjet:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .tarjet img {
@@ -34,6 +52,13 @@
 
 .tarjet h3 {
     font-size: 16px;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+    /* Permite que el texto fluya naturalmente */
+    word-wrap: break-word; /* Rompe palabras largas si es necesario */
+}
+.tarjet h4{
+     font-size: 10px;
     margin: 0 0 15px 0;
     line-height: 1.4;
     /* Permite que el texto fluya naturalmente */
@@ -62,4 +87,8 @@
     padding: 8px 15px;
     border-radius: 4px;
     cursor: pointer;
+
+}
+.pb button:hover{
+ background-color:#156DAD;
 }

@@ -33,3 +33,43 @@ a{
     cursor: pointer;
     color: white;
 }
+
+
+/* Nuevo: Estilo para el contenedor del dropdown */
+.dropdown-trigger {
+    position: relative; /* Clave: define el punto de referencia */
+    cursor: pointer;
+}
+
+/* Nuevo: Estilo del menú desplegable */
+.dropdown-menu {
+    position: absolute; /* Sale del flujo normal */
+    top: 100%;          /* Se coloca justo debajo de la barra */
+    left: 0;
+    margin-top: 10px;   /* Un pequeño margen para que no esté pegado */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 200px;
+    list-style: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Nuevo: Estilo de cada opción dentro del menú */
+.dropdown-menu li {
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f5f5f5;
+}
+
+/* Ajuste: Para que el botón de Iniciar sesión no pierda estilo */
+.nav-actions {
+    display: flex;
+    align-items: center;
+}

@@ -1,14 +1,34 @@
 export const productos = [
     {
-        id: 1,
-        nombre: "Camisa Elegante",
+         id: 1,
+        categoria: "Camisas",       
         precio: 150000,
-        Image: "/Camisa-Blanca.jpg"
+        stock: 25,                  
+        Image: "/Camisa-Blanca.jpg", 
+        descripcion: "Camisa formal de algodón..."
     },
     {
          id: 2,
-        nombre: "Pantalon Corto tipo Camuflado",
+        categoria: "Pantalones",
         precio: 90000,
-        Image: "/bermudas.jpg"
+        stock: 25, 
+        Image: "/bermudas.jpg",
+        descripcion: "Camisa formal de algodón..."
+    },
+    {
+         id: 3,
+          categoria: "Pantalones",
+        precio: 90000,
+        stock: 25, 
+        Image: "/bermudas.jpg",
+        descripcion: "Camisa formal de algodón..."
+    },
+    {
+         id: 4,
+         categoria: "Pantalones",
+        precio: 90000,
+        stock: 25, 
+        Image: "/bermudas.jpg",
+        descripcion: "Camisa formal de algodón..."
     }
 ];
